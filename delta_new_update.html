@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta NEW UPDATE</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google reCAPTCHA API -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Diagonal stripes pattern background with gorgeous purple tones */
+        .bg-diagonal-stripes {
+            background-color: #2e1065;
+            background-image: repeating-linear-gradient(
+                45deg,
+                rgba(88, 28, 135, 0.4),
+                rgba(88, 28, 135, 0.4) 20px,
+                rgba(126, 34, 206, 0.2) 20px,
+                rgba(126, 34, 206, 0.2) 40px
+            );
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 25px rgba(168, 85, 247, 0.4); }
+            50% { box-shadow: 0 0 45px rgba(168, 85, 247, 0.7); }
+        }
+
+        .glow-effect {
+            animation: pulse-glow 3s infinite;
+        }
+    </style>
+</head>
+<body class="bg-diagonal-stripes min-h-screen flex flex-col justify-between items-center p-4 sm:p-8 relative overflow-x-hidden">
+
+    <!-- Decorative background glow blur circles -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-purple-600/25 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-indigo-600/25 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Header Section -->
+    <header class="relative z-10 text-center mt-6">
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight uppercase bg-gradient-to-r from-purple-200 via-purple-300 to-indigo-300 bg-clip-text text-transparent drop-shadow-[0_4px_25px_rgba(192,132,252,0.5)]">
+            Delta NEW UPDATE
+        </h1>
+        <p class="text-purple-300/80 text-sm sm:text-base mt-2 font-medium">Bản cập nhật mới nhất - An toàn & Nhan chóng</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="relative z-10 w-full max-w-md my-auto py-6">
+        <div class="bg-gray-900/85 backdrop-blur-xl border border-purple-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl glow-effect transition-all duration-300 flex flex-col items-center text-center">
+            
+            <div class="w-16 h-16 mb-4 bg-gradient-to-tr from-purple-600 to-indigo-500 rounded-2xl flex items-center justify-center shadow-lg shadow-purple-500/30 animate-float">
+                <i class="fa-solid fa-shield-cat text-white text-2xl"></i>
+            </div>
+
+            <h2 class="text-lg sm:text-xl font-bold text-white mb-2">Xác Thực Bảo Mật</h2>
+            <p class="text-gray-300 text-xs sm:text-sm mb-6 leading-relaxed">
+                Vui lòng hoàn thành xác thực reCAPTCHA bên dưới để mở khóa nút truy cập Delta.
+            </p>
+
+            <!-- reCAPTCHA v2 Widget Box -->
+            <div class="bg-purple-950/40 border border-purple-500/20 p-4 rounded-2xl mb-6 flex justify-center w-full overflow-hidden">
+                <div class="g-recaptcha scale-90 sm:scale-100 origin-center" data-callback="enableDeltaButton" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+            </div>
+
+            <!-- Action Button (Locked by default) -->
+            <a href="https://vtd5826-sys.github.io/web-trang-ch-/?url=https%3A%2F%2Flink4sub.com%2F1faD21Ti06" 
+               id="deltaBtn" 
+               class="w-full inline-flex items-center justify-center gap-2 bg-gray-700/50 text-gray-400 font-bold py-4 px-8 rounded-2xl shadow-none cursor-not-allowed pointer-events-none transition-all duration-300 text-base uppercase tracking-wider">
+                <i class="fa-solid fa-lock text-sm" id="btnIcon"></i>
+                <span>Delta Truy Cập</span>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="relative z-10 text-center w-full max-w-md flex justify-center gap-4 mb-4">
+        <a href="https://t.me/deltaLinktele" target="_blank" 
+           class="flex-1 inline-flex items-center justify-center gap-2 bg-purple-950/40 hover:bg-purple-900/60 backdrop-blur-md text-purple-200 hover:text-white py-3 px-4 rounded-xl border border-purple-500/30 text-sm font-semibold shadow-lg transition-all duration-200">
+            <i class="fa-brands fa-telegram text-blue-400"></i>
+            <span>Telegram</span>
+        </a>
+        <a href="https://discord.gg/Ys3g47DYap" target="_blank" 
+           class="flex-1 inline-flex items-center justify-center gap-2 bg-purple-950/40 hover:bg-purple-900/60 backdrop-blur-md text-purple-200 hover:text-white py-3 px-4 rounded-xl border border-purple-500/30 text-sm font-semibold shadow-lg transition-all duration-200">
+            <i class="fa-brands fa-discord text-indigo-400"></i>
+            <span>Discord</span>
+        </a>
+    </footer>
+
+    <!-- JavaScript for unlocking action button -->
+    <script>
+        function enableDeltaButton() {
+            const btn = document.getElementById('deltaBtn');
+            const icon = document.getElementById('btnIcon');
+            
+            // Remove locked state and apply active glowing purple gradient state
+            btn.classList.remove('bg-gray-700/50', 'text-gray-400', 'cursor-not-allowed', 'pointer-events-none', 'shadow-none');
+            btn.classList.add('bg-gradient-to-r', 'from-purple-600', 'to-indigo-600', 'hover:from-purple-500', 'hover:to-indigo-500', 'text-white', 'shadow-xl', 'shadow-purple-600/40', 'hover:shadow-purple-600/70', 'transform', 'hover:-translate-y-0.5');
+            
+            // Change lock icon to unlock/arrow icon
+            icon.className = "fa-solid fa-arrow-right-to-bracket text-sm";
+        }
+    </script>
+</body>
+</html>
